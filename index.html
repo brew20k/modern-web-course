@@ -1,0 +1,372 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Modern Web Applications</title>
+
+		<meta name="description" content="Presentation for a course on Modern Web Application Development at West Monroe Partners">
+		<meta name="author" content="Kevin Kinnebrew">
+		<meta name="author" content="Chris Miller">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/theme/default.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<script>
+			// If the query includes 'print-pdf' we'll use the PDF print sheet
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			  
+			  <section>
+			    <h1>Modern Web Applications</h1>
+			    <h3>West Monroe New Hire Training</h3>
+			  </section>
+			  
+			  <section>
+			    <br/><br/><br/><br/>
+			    <h2>Introductions</h2>
+			  </section>
+			  
+			  <section>
+			    <h2>Agenda: Morning</h2>
+			    <ul>
+			      <li>Introduction</li>
+			      <li>HTML5 & CSS3</li>
+			      <li>Javascript & JQuery</li>
+			      <li>AJAX & RESTFul Design</li>
+			      <li>Managing Business Logic</li>
+			      <li>Connecting to the Database</li>
+			    </ul>
+			  </section>
+			  
+			  
+			  <section>
+			  
+			    <section>
+			      <br/><br/><br/><br/>
+			      <h2>Evolution of Web Apps</h2>
+			    </section>
+			    
+			    <section>
+			      <br/><br/><br/><br/>
+			      <p>Improved Decoupling</p>
+			      <p>Do More on the Client</p>
+			      <p>Better, More Responsive Experience</p>
+			    </section>
+			    
+			  </section>
+			  
+			  
+			  <section>
+			  
+			    <section>
+			      <br/><br/><br/><br/>
+			      <h2>What is HTML5?</h2>
+			    </section>
+			    
+			    <section>
+			      <br/><br/><br/><br/>
+			      <h3>It's Different From Plain HTML</h3>
+			    </section>
+			    
+			    <section>
+			      <h3>What's New?</h3>
+			      <ul>
+			        <li>Semantic Tags</li>
+			        <li>Forms</li>
+			        <li>LocalStorage</li>
+			        <li>Offline Mode</li>
+			        <li>History</li>
+			        <li>Geolocation</li>
+			      </ul>
+			    </section>
+			    
+			    <section>
+			      <h3>Semantic Tags</h3>
+			      <br/>
+			      <p>It's not all DIVs (or TABLEs)</p>
+			      <br/>
+			      <p>New tags allow you to organize and give meaning to your content</p>
+			    </section>
+			    
+			    <section>
+			      <h3>LocalStorage</h3>
+			      <br/>
+			      <p>A key-value store in the browser.</p>
+			      <br/>
+			      <p>Save keyed strings in your session by using the localStorage object.</p>
+			    </section>
+			    
+			    <section>
+			      <h3>Offline Mode</h3>
+			      <br/>
+			      <p>Run your web applications offline.</p>
+			      <br/>
+			      <p>Check your connection status with navigator.onLine and cache resources locally.</p>
+			    </section>
+			    
+			    <section>
+			      <h3>Geolocation</h3>
+			      <br/>
+			      <p>Get your user's location.</p>
+			      <br/>
+			      <p>Return the longitude and latitude of the user's browser with navigator.geolocation</p>
+			    </section>
+			    
+			    <section>
+			      <h3>From Pages to Apps</h3>
+			      <ul>
+			        <li>Saving Data Locally</li>
+			        <li>Working Offline</li>
+			        <li>Interacting with Services</li>
+			        <li>Managing Hash State</li>
+			        <li>Native-like Features</li>
+			      </ul>
+			    </section>
+			    
+			  </section>
+			  
+			  
+			  <section>
+			  
+			    <section>
+			      <br/><br/><br/><br/>
+			      <h2>What is CSS3?</h2>
+			    </section>
+			    
+			    <section>
+			      <br/><br/><br/><br/>
+			      <h3>Do more with your CSS</h3>
+			    </section>
+			    
+			    <section>
+			      <h3>What's New?</h3>
+			      <ul>
+			        <li>Rounded Corners & Shadows</li>
+			        <li>Gradients</li>
+			        <li>Multiple Backgrounds</li>
+			        <li>Animations</li>
+			        <li>Transforms</li>
+			        <li>Selectors</li>
+			      </ul>
+			    </section>
+			    
+			    <section>
+			      <h3>Gradients</h3>
+			      <br/>
+			      <p>Use -webkit-gradient to write your gradients instead of using images.</p>
+			    </section>
+			    
+			    <section>
+			      <h3>Multiple Backgrounds</h3>
+			      <br/>
+			      <p>Pass comma separated url() links to the background-image.</p>
+			    </section>
+			    
+			    <section>
+			      <h3>Animations</h3>
+			      <br/>
+			      <p>Use -webkit-transition to define animations of css properties.</p>
+			    </section>
+			    
+			    <section>
+			      <h3>Transforms</h3>
+			      <br/>
+			      <p>Use -webkit-scale, -webkit-translatem -webkit-rotate to transform elements.</p>
+			      <br/>
+			      <a href="http://www.webkit.org/blog/386/3d-transforms/">Example</a>
+			    </section>
+			    
+			    <section>
+			      <h3>Advanced Selectors</h3>
+			      <br/>
+			      <p>Use attribute, child, and conditional pseudo selectors to find elements.</p>
+			      <br/>
+			      <a href="http://www.456bereastreet.com/archive/200601/css_3_selectors_explained/">Example</a>
+			    </section>
+			    
+			  </section>
+			  
+			  
+			  <section>
+			  
+			    <section>
+			      <h2>Box Model</h2>
+			      <br/>
+			      <p>How to position and format elements in the DOM with CSS</p>
+			    </section>
+			    
+			    <section>
+			      <img src="img/css-box-model.gif" alt="Box Model" />
+			      <aside class="notes">
+			        <a href="http://css-tricks.com/the-css-box-model/">Link</a>
+			      </aside>
+			    </section>
+			    
+			    <section>
+			      <br/><br/><br/><br/>
+			      <a href="http://jsfiddle.net/brew20k/c9EgA/5/" target="_blank">JSFiddle Demo</a>
+			    </section>
+			    
+			    
+			  </section>
+			  
+			  
+			  <section>
+			  
+			    <section>
+			      <h2>What's New in Javascript</h2>
+			    </section>
+			    
+			  </section>
+			  
+			  
+			  <section>
+			    <br/><br/><br/><br/>
+			    <h2>Break</h2>
+			  </section>
+			  
+			  
+			  <section>
+			  
+			    <section>
+			      <h2>AJAX & RESTFul Design</h2>
+			    </section>
+			    
+			  </section>
+			  
+			  
+			  <section>
+			  
+			    <section>
+			      <h2>Managing Business Logic</h2>
+			    </section>
+			    
+			  </section>
+			  
+			  
+			  <section>
+			  
+			    <section>
+			      <h2>Connecting to the Database</h2>
+			    </section>
+			    
+			  </section>
+			  
+			  
+			  <section>
+			    <br/><br/><br/><br/>
+			    <h2>Lunch</h2>
+			  </section>
+			  
+			  
+			  <section>
+			    <h2>Agenda: Afternoon</h2>
+			    <ul>
+			      <li>Managing Deployment</li>
+			      <li>Code Project</li>
+			      <li>Presentation</li>
+			    </ul>
+			  </section>
+			  
+			  
+			  <section>
+			  
+			    <section>
+			      <h2>Managing Deployment</h2>
+			    </section>
+			    
+			  </section>
+			  
+			  
+			  <section>
+			  
+			    <section>
+			      <h2>Code Project</h2>
+			    </section>
+			    
+			  </section>
+			  
+			  
+			  <section>
+			  
+			    <section>
+			      <h2>Presentation</h2>
+			    </section>
+			    
+			  </section>
+			  
+			  
+			  <section>
+			    <br/><br/><br/><br/>
+			    <h2>The End</h2>
+			  </section>
+			  
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Presentation progress bar -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+					{ src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+				]
+			});
+			
+		</script>
+
+	</body>
+</html>
